@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <div id="header">
+	<h1>Blog Application</h1>
+</div>
+<div id="menu">
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">News</a></li>
+		<li><a href="#">Blog</a></li>
+		
+	</ul>
+</div>
+<div id="content">
+	 <%= yield %>
+</div>
+<div id="footer">
+	
+</div>
+   
+  </body>
+</html>
